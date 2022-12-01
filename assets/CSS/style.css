@@ -1484,6 +1484,12 @@ img {
   background-color: var(--Pale-orange);
   background-color: rgb(238, 238, 238);
 }
+@media screen and (max-width: 415px) {
+  .sort-filter__mobile {
+    position: fixed;
+  }
+}
+
 .sort-filter__mobile > section {
   flex: 0 0 45%;
   height: 100%;
