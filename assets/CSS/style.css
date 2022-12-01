@@ -61,7 +61,7 @@ img {
   background-color: var(--White);
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 1001;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -70,7 +70,7 @@ img {
   border-bottom: 1px solid var(--gray);
 }
 .header * {
-  z-index: 1000;
+  z-index: 1001;
 }
 .header__logo {
   max-height: 8vh;
