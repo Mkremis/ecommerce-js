@@ -18,7 +18,7 @@ export function SubCat() {
       $modalAside = document.querySelector(".modal-aside");
     const URI = window.location.pathname,
       subCats = {
-        "/": {
+        "/eCommerce-SPA/": {
           url: response.navigation[1].children[4].children[0].children[0]
             .children,
           header: "SALE",
