@@ -40,12 +40,12 @@ export function urlHandler() {
         },
       });
     } else {
-      console.log(route());
       ajax({
         url: route(),
         success: async (response) => {
           if (response) {
             window.product = response;
+            console.log(response);
             productCards(response);
           } else {
             return;
