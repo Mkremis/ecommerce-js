@@ -579,8 +579,7 @@ img {
 /* MOBILE
 @media (max-width: 415px) {
   .product {
-    margin-top: 3rem;
-    flex-grow: 1;
+ margin: 0 auto;
   }
 }
  */
