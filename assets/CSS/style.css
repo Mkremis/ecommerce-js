@@ -391,7 +391,7 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 999;
+  z-index: 1001;
 }
 
 .modal-navbar {
@@ -478,6 +478,7 @@ img {
 }
 
 .content {
+  margin-top: 5vh;
   width: 100vw;
   background-color: transparent;
   display: flex;
