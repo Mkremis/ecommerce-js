@@ -12,10 +12,9 @@ export function urlHandler() {
     location: { pathname },
   } = window;
   if (pathname.length === 0 || pathname === "/index.html" || pathname === "") {
-    window.location.pathname = "/";
-    console.log(window.location.pathname);
+    window.location.pathname = "/eCommerce-SPA/";
   }
-  if (pathname === "/") {
+  if (pathname === "/eCommerce-SPA/") {
     document.querySelector(".sort-filter__mobile").style.display = "none";
     Home("16661", "16691");
     document.title = `Home | Nataly`;
