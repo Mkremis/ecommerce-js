@@ -58,6 +58,7 @@ document.addEventListener("click", (e) => {
     if (e.target.dataset.id)
       localStorage.setItem("category", e.target.dataset.id);
     if (e.target.value) e.target.href = e.target.value;
+     sessionStorage.removeItem("filter");
     urlRoute(e);
   } else if (
     e.target.matches(".product>figure>*") ||
@@ -79,14 +80,7 @@ document.addEventListener("click", (e) => {
         updatedFilter = filter.replace(e.target.value, "");
       sessionStorage.setItem("filter", updatedFilter);
       let menufilter = JSON.parse(sessionStorage.getItem("menufilter"));
-      console.log(menufilter);
-      let updatedMenu = menufilter.filter((obj) => {
-        console.log(obj);
-        console.log(obj[e.target.dataset.parentid], e.target.name);
-        console.log(obj[e.target.dataset.parentid] !== e.target.name);
-        return obj[e.target.dataset.parentid] !== e.target.name;
-      });
-      console.log(updatedMenu);
+      let updatedMenu = menufilter.filter((obj) => obj[e.target.dataset.parentid] !== e.target.name);
       sessionStorage.setItem("menufilter", JSON.stringify(updatedMenu));
     }
   } else if (
