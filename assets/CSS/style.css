@@ -576,13 +576,13 @@ img {
     align-items: baseline;
   }
 }
-/* MOBILE
+/* MOBILE */
 @media (max-width: 415px) {
   .product {
  margin: 0 auto;
   }
 }
- */
+
 .product-description {
   font-size: 3.5vmin;
   height: 10vmin;
