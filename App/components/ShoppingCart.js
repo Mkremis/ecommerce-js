@@ -14,7 +14,6 @@ export function CartManager() {
     console.log(items);
   }
   const CART = { ...items };
-  console.log("SHOPPING CART", CART);
   // if some product quantity in the cart is = 0, this product is deleted from the cart modal (not from the user or session object CART)
   for (const key in CART) {
     if (CART[key]["prodQ"] === 0) delete CART[key];
