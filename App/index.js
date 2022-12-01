@@ -59,6 +59,7 @@ document.addEventListener("click", (e) => {
       localStorage.setItem("category", e.target.dataset.id);
     if (e.target.value) e.target.href = e.target.value;
      sessionStorage.removeItem("filter");
+     sessionStorage.removeItem("menufilter");
     urlRoute(e);
   } else if (
     e.target.matches(".product>figure>*") ||
