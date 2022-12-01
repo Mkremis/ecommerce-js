@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <style id="dynamic-styles"></style>
+    <meta name="description" />
+    <link
+      rel="shortcut icon"
+      href="/eCommerce-SPA/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title></title>
+  </head>
+  <body>
+    <main class="main-container">
+      <header class="header">
+        <div class="header__navigation">
+          <div class="header__menu-container">
+            <img
+              class="header__menu"
+              src="/eCommerce-SPA/images/icon-menu.svg"
+              alt="menu icon"
+            />
+          </div>
+          <img
+            class="header__logo"
+            src="/eCommerce-SPA/images/logo.png"
+            alt="logo"
+            data-href="/"
+          />
+          <!-- navbar desktop-->
+          <nav class="nav-bar">
+            <ul class="navbar__items">
+              <li>
+                <a class="navbar__link" href="/women" data-id="27108">Women</a>
+              </li>
+              <li>
+                <a class="navbar__link" href="/men" data-id="27110">Men</a>
+              </li>
+              <li>
+                <a class="navbar__link" href="/sneakers" data-id="4209"
+                  >Sneakers</a
+                >
+              </li>
+              <li>
+                <a class="navbar__link" href="/about">About</a>
+              </li>
+              <li>
+                <a class="navbar__link" id="contact" href="/contact">Contact</a>
+              </li>
+            </ul>
+            <!-- Search bar -->
+          </nav>
+        </div>
+        <div class="search-button_mobile-container">
+          <button class="search-button_mobile">
+            <img
+              class="search-button_mobile-image"
+              src="/eCommerce-SPA/images/search.svg"
+              alt="search"
+            />
+            <span class="close-search-button_mobile-image --invisible"
+              >&times;</span
+            >
+          </button>
+        </div>
+        <div class="autocomplete">
+          <input
+            id="search_products"
+            class="search"
+            type="search"
+            name="search_products"
+            placeholder="search for products.."
+            autocomplete="off"
+          />
+        </div>
+        <div class="header__cart">
+          <div class="header__cart--notification"></div>
+          <img
+            class="header__cart-img"
+            src="/eCommerce-SPA/images/icon-cart.svg"
+            alt="shopping cart"
+          />
+        </div>
+        <div class="header__user">
+          <img
+            src="/eCommerce-SPA/images/not-logged.svg"
+            class="header__user-avatar"
+            alt="user avatar"
+          />
+        </div>
+      </header>
+      <aside id="nav-bar__aside"></aside>
+      <!-- inicio modal navbar -->
+      <div class="modal-navbar__background --invisible">
+        <nav class="modal-navbar">
+          <img
+            class="modal-navbar__close"
+            src="/eCommerce-SPA/images/icon-close.svg"
+            alt="close"
+          />
+          <ul class="modal-navbar__items">
+            <li>
+              <button class="modal-navbar__link" value="/women" data-id="27108">
+                Women
+              </button>
+            </li>
+            <li>
+              <button class="modal-navbar__link" value="/men" data-id="27110">
+                Men
+              </button>
+            </li>
+          </ul>
+          <section class="modal-aside"></section>
+          <ul class="modal-navbar__footer">
+            <li>
+              <button class="modal-navbar__link" value="/about">About</button>
+            </li>
+            <li>
+              <button class="modal-navbar__link" value="/contact">
+                Contact
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- final modal navbar -->
+      <section id="content" class="content"></section>
+    </main>
+    <script type="module" src="App/index.js"></script>
+  </body>
+</html>
