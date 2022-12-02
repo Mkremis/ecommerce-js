@@ -26,21 +26,6 @@ export const EVENTS = {
         newValue < 0 ? 0 : newValue;
     },
   },
-  details__button: {
-    action: (classTarget, eTarget) => {
-      const newItem = {
-        [product.id]: {
-          prodName: product.name,
-          prodImage: product.media.images[0].url,
-          prodPrice: product.price.current.value,
-          prodQ: parseInt(document.querySelector(".input__number").value),
-        },
-      };
-      document.querySelector(".header__cart-img").style.animation =
-        "shake 0.5s";
-      USER.setCart(newItem);
-    },
-  },
   "header__cart-img": {
     action: (classTarget, eTarget) => {
       document.querySelector(".cart-modal").classList.toggle("--invisible");
