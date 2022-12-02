@@ -100,6 +100,9 @@ document.addEventListener("click", (e) => {
     sessionStorage.removeItem("menufilter");
     FilterMenu(product, "menu");
     urlRoute(window.location.pathname);
+  } else if (e.target.matches(".details a>strong")) {
+    e.preventDefault();
+    window.open(`https://www.asos.com/${e.target.parentNode.href}`, "_blank");
   }
 });
 
