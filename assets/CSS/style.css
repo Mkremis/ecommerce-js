@@ -603,6 +603,9 @@ img {
   line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+.product-price {
+  font-weight: bold;
+}
 .product > figure {
   cursor: pointer;
   z-index: 0;
