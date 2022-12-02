@@ -11,7 +11,9 @@ export function productDetails(product) {
         <details>
           <summary><span>Product Information</span></summary>
             <article>
-             <a href="${product.sizeGuide}" target="_blank">Size Guide</a>
+             <a href="${product.sizeGuide || ""}" target="_blank">${
+    product.sizeGuide ? "Size Guide" : ""
+  }</a>
              <p>Gender: <span>${product.gender}</span></p>
              <p>Colour: <span>${product.media.images[0].colour}</span></p>
              <div>${product.description}</div>
@@ -41,7 +43,7 @@ export function productDetails(product) {
             <button class="input__plus">+</button>
           </div>
           <button class="details__button">
-            <img src="/eCommerce-SPA/images/icon-cart-white.svg" alt="cart" />Add to cart
+            <img src="images/icon-cart-white.svg" alt="cart" />Add to cart
           </button>
         </div>
       </section>
