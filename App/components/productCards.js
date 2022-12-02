@@ -25,6 +25,7 @@ export function productCards(response) {
       price_curr = product.price.current.text,
       price_prev = product.price.previous.text,
       id = product.id;
+    
     // only products with with 9 digits Ids are avaible for product details
     if (id.toString().length === 9) {
       cards = new Components({
@@ -37,22 +38,12 @@ export function productCards(response) {
         price_prev,
         id,
       });
-    } else {
-      cards = new Components({
-        image,
-        name,
-        brand,
-        colour,
-        currency,
-        price_curr,
-        price_prev,
-        id,
-      });
+
+      const $product = document.createElement("article");
+      $product.classList.add("product");
+      $product.innerHTML = cards.productCardMaker();
+      $fragment.appendChild($product);
     }
-    const $product = document.createElement("article");
-    $product.classList.add("product");
-    $product.innerHTML = cards.productCardMaker();
-    $fragment.appendChild($product);
   });
 
   $container.appendChild($fragment);
