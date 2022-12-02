@@ -592,9 +592,10 @@ img {
 .product-description {
   font-size: 3.5vmin;
   height: 10vmin;
+  max-width: 315px;
 }
 .product-name {
-  max-width: fit-content;
+  max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
