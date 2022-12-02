@@ -43,7 +43,7 @@ export function productDetails(product) {
             <button class="input__plus">+</button>
           </div>
           <button class="details__button">
-            <img src="images/icon-cart-white.svg" alt="cart" />Add to cart
+             <img src="/eCommerce-SPA/images/icon-cart-white.svg" alt="cart" />Add to cart
           </button>
         </div>
       </section>
