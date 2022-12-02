@@ -119,6 +119,6 @@ export function Home(women, men) {
     if (!$mobileNav.classList.contains("--invisible")) {
       $mobileNav.classList.toggle("--invisible");
     }
-   
+    $loader.style.display = "none";
   }
 }
