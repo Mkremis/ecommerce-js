@@ -54,7 +54,9 @@ export function urlHandler() {
       });
     }
 
-    document.getElementById("loader").style.display = "none";
+      setTimeout(() => {
+      document.getElementById("loader").style.display = "none";
+    }, 3000);
     if (!$mobileNav.classList.contains("--invisible"))
       $mobileNav.classList.toggle("--invisible");
     document.title = title;
