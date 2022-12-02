@@ -103,7 +103,21 @@ document.addEventListener("click", (e) => {
   } else if (e.target.matches(".details a>strong")) {
     e.preventDefault();
     window.open(`https://www.asos.com/${e.target.parentNode.href}`, "_blank");
-  }
+  } else if (
+    e.target.matches(".details__button") ||
+    e.target.matches(".details__button *")
+  ){
+    const newItem = {
+        [product.id]: {
+          prodName: product.name,
+          prodImage: product.media.images[0].url,
+          prodPrice: product.price.current.value,
+          prodQ: parseInt(document.querySelector(".input__number").value),
+        },
+      };
+      document.querySelector(".header__cart-img").style.animation ="shake 0.5s";
+      USER.setCart(newItem);
+    };
 });
 
 document.addEventListener("submit", (e) => {
