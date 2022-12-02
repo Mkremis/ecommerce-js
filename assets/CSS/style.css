@@ -164,13 +164,14 @@ img {
 }
 /* ---------------------AUTOCOMPLETE FORM----------------- */
 @media (max-width: 415px) {
-  .autocomplete {
+   .autocomplete {
     display: none;
     height: 100%;
     align-items: center;
+    width: 50%;
   }
   .search {
-    padding: 10px;
+    flex-grow: 1;
     height: 50%;
     font-size: 0.7rem;
     position: relative;
