@@ -999,6 +999,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 1001;
 }
 /* MEDIA QUERY DESKTOP */
 @media (min-width: 415px) {
