@@ -12,11 +12,11 @@ export class Components {
 
   productCardMaker() {
     return `
-  <figure data-id=${this.id}>
+<figure data-id=${this.id}>
     <img class="product-image" src = "${this.image}" alt="${this.name}"/>
-    <figcaption class="product-description">
+    <figcaption class="product-description" data-id=${this.id}>
     <p class="product-name">${this.name}</p>
-    <p class="product-price"><b>${this.price_curr}</b></p></figcaption>
+    <p class="product-price" >${this.price_curr}</p></figcaption>
   </figure>
 `;
   }
