@@ -206,7 +206,7 @@ export const EVENTS = {
         .classList.toggle("--invisible");
     },
   },
-  "user-signout": {
+  "user-logout": {
     action: () => Logout(),
   },
   "user-signout": {
