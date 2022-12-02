@@ -32,8 +32,13 @@ export function FilterMenu({ facets }, screen) {
            <label for="${facet.id}" class="label-${clss}">
       `;
 
-      if (parentId === "base_colour")
-        $template += `<div class="label-${clss}_colour" style="background-color:${facet.name}"></div>`;
+      if (parentId === "base_colour" && facet.name) {
+        let color;
+        let hexColor = namedColors.find((color) => color.name === facet.name);
+        if (hexColor) color = hexColor.hex;
+        $template += `<div class="label-${clss}_colour" style="background-color:${color}"></div>`;
+      }
+
       $template += ` 
            <div class="label-${clss}_description">
             ${facet.name}<span class="filter-count">${count}</span>
