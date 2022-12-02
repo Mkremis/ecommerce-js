@@ -1,3 +1,4 @@
+import { namedColors } from "../helpers/color-name-list.js";
 export function FilterMenu({ facets }, screen) {
   facets =
     screen === "menu"
