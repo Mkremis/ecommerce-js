@@ -62,8 +62,8 @@ document.addEventListener("click", (e) => {
      sessionStorage.removeItem("menufilter");
     urlRoute(e);
   } else if (
-    e.target.matches(".product>figure>*") ||
-    e.target.matches(".home-product>figure>*") ||
+    e.target.matches(".product>figure *") ||
+    e.target.matches(".home-product>figure *") ||
     e.target.matches(".cart-modal__item *")
   ) {
     e.target.href = "/checkout";
