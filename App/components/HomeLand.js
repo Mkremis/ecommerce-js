@@ -9,12 +9,12 @@ export function Home(women, men) {
 
   let bestWM, bestM;
   const options = {
-      method: "GET",
-    headers: {
-      "X-RapidAPI-Key": "9c61d7c0bamsh1659f791e94b92fp14bc20jsne92bfd2f3e80",
-      "X-RapidAPI-Host": "asos2.p.rapidapi.com",
-    },
-  },
+     method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '1693f38f67mshed9ca24b1b2aec1p1fe1b4jsnd9da89021c3a',
+		'X-RapidAPI-Host': 'asos2.p.rapidapi.com'
+	}
+},
     urlWM = `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=${women}&limit=48&country=US&sort=freshness&currency=USD&sizeSchema=US&lang=en-US`,
     urlM = `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=${men}&limit=48&country=US&sort=freshness&currency=USD&sizeSchema=US&lang=en-US`,
     $WMfragment = document.createDocumentFragment(),
