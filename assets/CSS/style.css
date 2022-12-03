@@ -1871,10 +1871,12 @@ img {
   .filter-categories {
     grid-area: content;
     display: grid;
-    width: 100vw;
+    width: 95vw;
+    margin: auto auto;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(55px, 1fr));
     grid-auto-rows: minmax(55px, max-content);
+    
   }
   .filter-categories > li {
     padding: 0 0.5rem;
