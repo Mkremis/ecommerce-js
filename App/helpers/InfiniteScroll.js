@@ -20,7 +20,10 @@ export function infiniteScroll() {
       let rest = itemCount - offset;
       offset += Math.min(48, rest);
       sessionStorage.setItem("offset", offset);
-      if (offset < itemCount) urlRoute(window.location.pathname);
+      if (offset < itemCount){
+        document.getElementById("loader").style.display = "block";
+        urlRoute(window.location.pathname);
+      }
     } else {
       return false;
     }
