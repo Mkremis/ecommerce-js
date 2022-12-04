@@ -92,11 +92,13 @@ document.addEventListener("click", (e) => {
     e.target.matches(".filter_selection") ||
     e.target.matches(".filter_selection *")
   ) {
+    document.getElementById("content").innerHTML = null;
     urlRoute(window.location.pathname);
     document
       .querySelector(".filter__mobile__background")
       .classList.toggle("--invisible");
   } else if (
+    document.getElementById("content").innerHTML = null;
     e.target.matches(".filter-clear") ||
     e.target.matches(".filter-clear *")
   ) {
