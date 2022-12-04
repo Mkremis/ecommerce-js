@@ -15,7 +15,7 @@ export function infiniteScroll() {
       $scrollTopBtn.classList.add("--invisible");
     }
 
-    if (scrollTop + clientHeight > scrollHeight && offset) {
+    if (scrollTop + clientHeight +70 > scrollHeight && offset) {
       offset = parseInt(offset);
       let rest = itemCount - offset;
       offset += Math.min(48, rest);
