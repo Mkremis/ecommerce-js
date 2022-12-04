@@ -241,7 +241,7 @@ export const EVENTS = {
   },
    "scroll-top-btn": {
     action: (classTarget, eTarget) => {
-      window.scroll({ top: 0, behavior: "smooth" })
+      window.scroll({ top: 0, behavior: "smooth" });
     },
   },
 };
