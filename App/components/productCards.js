@@ -5,7 +5,7 @@ import { Components } from "./Components.js";
 
 export function productCards(response) {
   const { products } = response;
-  SubCat();
+ if (!parseInt(sessionStorage.getItem("offset")) > 0) SubCat();
   document.querySelector(".sort-filter__mobile").style.display = "flex";
 
   const $fragment = document.createDocumentFragment(),
