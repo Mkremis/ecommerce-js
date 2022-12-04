@@ -17,6 +17,7 @@ export function urlHandler() {
   }
   if (pathname === "/eCommerce-SPA/") {
     document.querySelector(".sort-filter__mobile").style.display = "none";
+    document.querySelector(".filter__mobile").style.display = "none";
     Home("16661", "16691");
     document.title = `Home | Nataly`;
     document
@@ -27,13 +28,18 @@ export function urlHandler() {
     let { route, title, description } = urlRoutes[pathname] || urlRoutes["404"];
     
     if (pathname === "/404" || pathname === "/about") {
+    document.querySelector(".sort-filter__mobile").style.display = "none";
+    document.querySelector(".filter__mobile").style.display = "none";
       document.getElementById("content").innerHTML = route();
     } else if (pathname === "/contact") {
+    document.querySelector(".sort-filter__mobile").style.display = "none";
+    document.querySelector(".filter__mobile").style.display = "none";
         document.getElementById("content").innerHTML = null;
       route();
     } else if (pathname === "/checkout") {
-        document.getElementById("content").innerHTML = null;
-      document.querySelector(".sort-filter__mobile").style.display = "none";
+    document.getElementById("content").innerHTML = null;
+    document.querySelector(".sort-filter__mobile").style.display = "none";
+    document.querySelector(".filter__mobile").style.display = "none";
       ajax({
         url: route(),
         success: (response) => {
