@@ -5,7 +5,8 @@ import { productOrder } from "./components/productOrder.js";
 import { productCards } from "./components/productCards.js";
 
 export function urlHandler() {
-  const $mobileNav = document.querySelector(".modal-navbar__background ");
+  const $mobileNav = document.querySelector(".modal-navbar__background "),
+         $hero = document.querySelector(".hero-container");
   document.getElementById("loader").style.display = "block";
   document.getElementById("nav-bar__aside").style.display = "block";
   let {
@@ -22,7 +23,7 @@ export function urlHandler() {
       .querySelector("meta[name='description']")
       .setAttribute("content", "This is the homepage");
   } else {
-    document.querySelector(".hero-container").style.display = "none";
+    if ($hero) $hero.style.display = "none";
     let { route, title, description } = urlRoutes[pathname] || urlRoutes["404"];
 
     document.getElementById("content").innerHTML = null;
@@ -40,6 +41,7 @@ export function urlHandler() {
         },
       });
     } else {
+        if (!parseInt(sessionStorage.getItem("offset")) > 0) document.getElementById("content").innerHTML = null;
       ajax({
         url: route(),
         success: async (response) => {
