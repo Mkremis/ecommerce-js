@@ -25,13 +25,14 @@ export function urlHandler() {
   } else {
     if ($hero) $hero.style.display = "none";
     let { route, title, description } = urlRoutes[pathname] || urlRoutes["404"];
-
-    document.getElementById("content").innerHTML = null;
+    
     if (pathname === "/404" || pathname === "/about") {
       document.getElementById("content").innerHTML = route();
     } else if (pathname === "/contact") {
+        document.getElementById("content").innerHTML = null;
       route();
     } else if (pathname === "/checkout") {
+        document.getElementById("content").innerHTML = null;
       document.querySelector(".sort-filter__mobile").style.display = "none";
       ajax({
         url: route(),
