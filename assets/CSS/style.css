@@ -1772,7 +1772,6 @@ img {
     grid-template-areas:
       "header"
       "content";
-    gap: 10px 0;
     width: 100vw;
   }
 
