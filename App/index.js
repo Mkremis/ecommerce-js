@@ -98,10 +98,10 @@ document.addEventListener("click", (e) => {
       .querySelector(".filter__mobile__background")
       .classList.toggle("--invisible");
   } else if (
-    document.getElementById("content").innerHTML = null;
     e.target.matches(".filter-clear") ||
     e.target.matches(".filter-clear *")
   ) {
+    document.getElementById("content").innerHTML = null;
     sessionStorage.removeItem("filter");
     sessionStorage.removeItem("menufilter");
     FilterMenu(product, "menu");
