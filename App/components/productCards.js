@@ -7,7 +7,7 @@ export function productCards(response) {
   const { products } = response;
  if (!parseInt(sessionStorage.getItem("offset")) > 0) SubCat();
   document.querySelector(".sort-filter__mobile").style.display = "flex";
-
+  document.querySelector(".filter__mobile").style.display = "grid";
   const $fragment = document.createDocumentFragment(),
     $container = document.getElementById("content");
   $container.className = "";
