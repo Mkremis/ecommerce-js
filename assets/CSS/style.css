@@ -1964,3 +1964,27 @@ img {
 .filter-categories > li:hover {
   background-color: var(--Pale-orange);
 }
+/* *****************  scroll-top-btn  **************** */
+
+.scroll-top-btn {
+  appearance: none;
+  position: fixed;
+  z-index: 3000;
+  bottom: 1vh;
+  left: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #00000020;
+  color: var(--Black);
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+}
+
+.scroll-top-btn:hover {
+  opacity: 0.7;
+}
