@@ -908,20 +908,20 @@ img {
     display: none;
   }
   /* --------------------gallery modal----------------------- */
-  .modal-gallery__background {
+ .modal-gallery__background {
     background-color: var(--Black-modal2);
     position: absolute;
-    top: 0;
+    top: 10vh;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
     z-index: 1999;
     display: none;
   }
   .modal-gallery {
-    margin: 1% auto;
+    margin: auto;
     width: 40%;
-    height: 95%;
+    height: 90vh;
   }
   .modal-gallery__image-container {
     height: 100%;
@@ -938,7 +938,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 90vh;
   }
   .modal-gallery__thumnail {
     height: 20%;
