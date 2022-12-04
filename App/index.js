@@ -106,6 +106,9 @@ document.addEventListener("click", (e) => {
     sessionStorage.removeItem("menufilter");
     FilterMenu(product, "menu");
     urlRoute(window.location.pathname);
+    document
+      .querySelector(".filter__mobile__background")
+      .classList.toggle("--invisible");
   } else if (e.target.matches(".details a>strong")) {
     e.preventDefault();
     window.open(`https://www.asos.com/${e.target.parentNode.href}`, "_blank");
