@@ -15,9 +15,9 @@ const urlRoutes = {
 
   "/search": {
     route: () =>
-      `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&limit=48${
-        sessionStorage.getItem("filter") || ""
-      }&country=US&sort=${
+      `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=${
+        sessionStorage.getItem("offset") || 0
+      }&limit=48${sessionStorage.getItem("filter") || ""}&country=US&sort=${
         localStorage.getItem("sort") || "recommended"
       }&q=${localStorage.getItem(
         "search"
@@ -28,9 +28,11 @@ const urlRoutes = {
   },
   "/women": {
     route: () =>
-      `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=${localStorage.getItem(
-        "category"
-      )}&limit=48${sessionStorage.getItem("filter") || ""}&country=US&sort=${
+      `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=${
+        sessionStorage.getItem("offset") || 0
+      }&categoryId=${localStorage.getItem("category")}&limit=48${
+        sessionStorage.getItem("filter") || ""
+      }&country=US&sort=${
         localStorage.getItem("sort") || "recommended"
       }&currency=USD&sizeSchema=US&lang=en-US`,
 
@@ -40,9 +42,11 @@ const urlRoutes = {
   },
   "/men": {
     route: () =>
-      `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=${localStorage.getItem(
-        "category"
-      )}&limit=48${sessionStorage.getItem("filter") || ""}&country=US&sort=${
+      `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=${
+        sessionStorage.getItem("offset") || 0
+      }&categoryId=${localStorage.getItem("category")}&limit=48${
+        sessionStorage.getItem("filter") || ""
+      }&country=US&sort=${
         localStorage.getItem("sort") || "recommended"
       }&currency=USD&sizeSchema=US&lang=en-US`,
 
@@ -52,9 +56,11 @@ const urlRoutes = {
   },
   "/sneakers": {
     route: () =>
-      `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=${localStorage.getItem(
-        "category"
-      )}&limit=48${sessionStorage.getItem("filter") || ""}&country=US&sort=${
+      `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=${
+        sessionStorage.getItem("offset") || 0
+      }&categoryId=${localStorage.getItem("category")}&limit=48${
+        sessionStorage.getItem("filter") || ""
+      }&country=US&sort=${
         localStorage.getItem("sort") || "recommended"
       }&currency=USD&sizeSchema=US&lang=en-US`,
 
@@ -73,9 +79,11 @@ const urlRoutes = {
   },
   "/category": {
     route: () =>
-      `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=${localStorage.getItem(
-        "category"
-      )}&limit=48${sessionStorage.getItem("filter") || ""}&country=US&sort=${
+      `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=${
+        sessionStorage.getItem("offset") || 0
+      }&categoryId=${localStorage.getItem("category")}&limit=48${
+        sessionStorage.getItem("filter") || ""
+      }&country=US&sort=${
         localStorage.getItem("sort") || "recommended"
       }&currency=USD&sizeSchema=US&lang=en-US`,
 
