@@ -239,4 +239,9 @@ export const EVENTS = {
       document.querySelector(".sort-filter__mobile").style.display = "flex";
     },
   },
+   "scroll-top-btn": {
+    action: (classTarget, eTarget) => {
+      window.scroll({ top: 0, behavior: "smooth" })
+    },
+  },
 };
