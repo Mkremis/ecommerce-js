@@ -1,11 +1,13 @@
 import { User } from "./User.js";
-import { Loader } from "./components/Loader.js";
 import { urlRoute } from "./urlRoute.js";
-import { AutoComplete } from "./helpers/AutoComplete.js";
+import { Loader } from "./components/Loader.js";
 import { sortFiltMob } from "./components/SortFilterMob.js";
 import { filterMobile } from "./components/FilterMobile.js";
 import { cartModal } from "./components/cartModal.js";
 import { LoginForm } from "./components/LoginForm.js";
+import { TopButton } from "./components/topBtn.js";
+import { infiniteScroll } from "./helpers/InfiniteScroll.js";
+import { AutoComplete } from "./helpers/AutoComplete.js";
 import { CartManager } from "./components/ShoppingCart.js";
 import { urlHandler } from "./urlHandler.js";
 import { EVENTS } from "./helpers/EventRoutes.js";
@@ -15,8 +17,14 @@ import { Filter } from "./helpers/Filter.js";
 import { Login } from "./helpers/Login.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
+  window.USER = new User({
+    cart: null,
+    user: {},
+    logged: false,
+  });
   window.product;
-  AutoComplete();
+  // window.route = urlRoute;
+  Loader();
   const $main = document.querySelector(".main-container"),
     $aside = document.getElementById("nav-bar__aside");
   $main.insertAdjacentHTML("afterbegin", sortFiltMob());
@@ -24,15 +32,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
   const $filter = document.querySelector(".filter__mobile__background"),
     $SFmenu = document.querySelector(".sort-filter__mobile");
   $aside.after($SFmenu, $filter);
-  window.USER = new User({
-    cart: null,
-    user: {},
-    logged: false,
-  });
-  Loader();
-  // window.route = urlRoute;
   document.querySelector(".main-container").innerHTML += cartModal();
   document.querySelector(".main-container").innerHTML += LoginForm();
+  document.querySelector(".main-container").appendChild(TopButton());
+  infiniteScroll();
+  AutoComplete();
   CartManager();
   urlHandler();
 });
