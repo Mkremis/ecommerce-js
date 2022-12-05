@@ -7,6 +7,7 @@ export function urlRoute(event) {
     event = event || window.event;
     event.preventDefault();
     window.history.pushState({}, "", event.target.href);
+    console.log(event.target.href);
     if (event.target.href !== href) {
       if (
         event.target.href.includes("/search") ||
