@@ -1,6 +1,6 @@
 import { urlHandler } from "./urlHandler.js";
 
-export function urlRoute(event) {
+const urlRoute = (event)=> {
   //capture the current location
   let { href } = window.location,
     { pathname } = window.location;
@@ -45,3 +45,4 @@ export function urlRoute(event) {
   }
   urlHandler();
 }
+export urlRoute;
