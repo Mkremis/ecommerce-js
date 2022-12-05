@@ -21,7 +21,7 @@ export function urlRoute(event) {
       }
     }
   } else {
-    window.history.pushState({}, "", event);
+    window.history.pushState({}, "", `https://mkremis.github.io${event}`);
     if (event !== pathname) {
       if (
         pathname.includes("/search") ||
