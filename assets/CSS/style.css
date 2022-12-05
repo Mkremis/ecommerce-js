@@ -1714,6 +1714,7 @@ img {
     content: " ";
   }
   .label-filter-menu {
+    font-weight: bold;
     display: flex;
     align-items: center;
   }
@@ -1907,6 +1908,7 @@ img {
   }
 
   .label-filter-menu {
+    font-weight: bold;
     display: flex;
     align-items: center;
   }
