@@ -1,13 +1,15 @@
 import { urlHandler } from "./urlHandler.js";
 
 export function urlRoute(event) {
+  //capture the current location
   let { href } = window.location,
     { pathname } = window.location;
   if (event === window.event) {
     event = event || window.event;
     event.preventDefault();
     window.history.pushState({}, "", event.target.href);
-    console.log(event.target.href);
+    console.log(event.target.href,  window.history );
+    //if the target location is diferent to the current reset offset to 0 and clear filters
     if (event.target.href !== href) {
       if (
         event.target.href.includes("/search") ||
@@ -22,6 +24,7 @@ export function urlRoute(event) {
     }
   } else {
     window.history.pushState({}, "", `https://mkremis.github.io${event}`);
+ //if the target location is diferent to the current reset offset to 0 and clear filters
     if (event !== pathname) {
       if (
         pathname.includes("/search") ||
