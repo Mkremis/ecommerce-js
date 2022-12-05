@@ -482,13 +482,19 @@ img {
 }
 
 .content {
-  margin-top: 5vh;
+  margin-top: 3vh;
   width: 100vw;
   background-color: transparent;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: baseline;
+}
+/* MEDIA QUERY DESKTOP */
+@media (min-width: 415px) {
+  .content {
+     margin-top: 10vh;
+  }
 }
 
 /* ---------------ABOUT PAGE----------- */
