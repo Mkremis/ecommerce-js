@@ -111,7 +111,8 @@ document.addEventListener("click", (e) => {
       .classList.toggle("--invisible");
   } else if (e.target.matches(".details a>strong")) {
     e.preventDefault();
-    window.open(`https://www.asos.com/${e.target.parentNode.href}`, "_blank");
+    let slug = e.target.parentNode.href;
+    window.open(`https://www.asos.com/${slug}`, "_blank");
   } else if (
     e.target.matches(".details__button") ||
     e.target.matches(".details__button *")
