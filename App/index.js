@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   window.USER = new User({
     cart: null,
     user: {},
-    logged: false,
+    logged: false
   });
   window.product;
   // window.route = urlRoute;
@@ -62,8 +62,8 @@ document.addEventListener("click", (e) => {
     if (e.target.dataset.id)
       localStorage.setItem("category", e.target.dataset.id);
     if (e.target.value) e.target.href = e.target.value;
-     sessionStorage.removeItem("filter");
-     sessionStorage.removeItem("menufilter");
+    sessionStorage.removeItem("filter");
+    sessionStorage.removeItem("menufilter");
     urlRoute(e);
   } else if (
     e.target.matches(".product>figure *") ||
@@ -85,7 +85,9 @@ document.addEventListener("click", (e) => {
         updatedFilter = filter.replace(e.target.value, "");
       sessionStorage.setItem("filter", updatedFilter);
       let menufilter = JSON.parse(sessionStorage.getItem("menufilter"));
-      let updatedMenu = menufilter.filter((obj) => obj[e.target.dataset.parentid] !== e.target.name);
+      let updatedMenu = menufilter.filter(
+        (obj) => obj[e.target.dataset.parentid] !== e.target.name
+      );
       sessionStorage.setItem("menufilter", JSON.stringify(updatedMenu));
     }
   } else if (
@@ -116,21 +118,22 @@ document.addEventListener("click", (e) => {
   } else if (
     e.target.matches(".details__button") ||
     e.target.matches(".details__button *")
-  ){
+  ) {
     const newItem = {
-        [product.id]: {
-          prodName: product.name,
-          prodImage: product.media.images[0].url,
-          prodPrice: product.price.current.value,
-          prodQ: parseInt(document.querySelector(".input__number").value),
-        },
-      };
-      document.querySelector(".header__cart-img").style.animation ="shake 0.5s";
-      USER.setCart(newItem);
+      [product.id]: {
+        prodName: product.name,
+        prodImage: product.media.images[0].url,
+        prodPrice: product.price.current.value,
+        prodQ: parseInt(document.querySelector(".input__number").value)
+      }
     };
+    document.querySelector(".header__cart-img").style.animation = "shake 0.5s";
+    USER.setCart(newItem);
+  }
 });
 
 document.addEventListener("submit", (e) => {
   e.preventDefault();
   if (e.target.matches(".login-form")) Login(new FormData(e.target));
+  if (e.target.matches(".user-account__form-submit")) console.log(e.target);
 });
