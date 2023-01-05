@@ -134,7 +134,6 @@ document.addEventListener("click", (e) => {
 
 document.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log(e.target);
   if (e.target.matches(".login-form")) Login(new FormData(e.target));
-  if (e.target.matches(".user-account__form-submit")) console.log(e.target);
+  if (e.target.matches(".user-account__form")) User.updateUser(e.target);
 });
