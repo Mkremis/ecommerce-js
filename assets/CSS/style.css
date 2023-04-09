@@ -533,12 +533,12 @@ img {
 }
 
 .WM-product-header {
-  background-image: url("/eCommerce-SPA/images/woman-header.jpg");
+  background-image: url("/ecommerce-js/images/woman-header.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 .M-product-header {
-  background-image: url("/eCommerce-SPA/images/man-header.jpg");
+  background-image: url("/ecommerce-js/images/man-header.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -981,7 +981,7 @@ img {
   }
   .modal-gallery__close:hover {
     cursor: pointer;
-    content: url(/eCommerce-SPA/images/icon-close-orange.svg);
+    content: url(/ecommerce-js/images/icon-close-orange.svg);
   }
   .modal-gallery__image-container > *:hover {
     cursor: pointer;
@@ -1601,14 +1601,14 @@ img {
     font-size: 2rem;
     cursor: pointer;
     background-color: transparent;
-    background-image: url("/eCommerce-SPA/images/arrow_back.svg");
+    background-image: url("/ecommerce-js/images/arrow_back.svg");
     background-size: 2rem;
     background-repeat: no-repeat;
     background-position: left;
     border: none;
   }
   .filter__mobile-back:hover {
-    background-image: url("/eCommerce-SPA/images/arrow_back_orange.svg");
+    background-image: url("/ecommerce-js/images/arrow_back_orange.svg");
   }
   .filter_selection {
     grid-area: filter;
@@ -1622,7 +1622,7 @@ img {
   }
   .filter_selection::before {
     flex: 0 1 40%;
-    background-image: url("/eCommerce-SPA/images/filter.svg");
+    background-image: url("/ecommerce-js/images/filter.svg");
     background-repeat: no-repeat;
     background-size: 50%;
     display: inline-block;
@@ -1636,7 +1636,7 @@ img {
   }
   .filter_selection:hover::before {
     color: var(--Orange);
-    background-image: url("/eCommerce-SPA/images/filter_orange.svg");
+    background-image: url("/ecommerce-js/images/filter_orange.svg");
   }
   .filter_selection:hover {
     color: var(--Orange);
@@ -1653,7 +1653,7 @@ img {
   }
   .filter-clear::before {
     flex: 0 1 40%;
-    background-image: url("/eCommerce-SPA/images/filter_off.svg");
+    background-image: url("/ecommerce-js/images/filter_off.svg");
     background-repeat: no-repeat;
     background-size: 50%;
     display: inline-block;
@@ -1667,7 +1667,7 @@ img {
   }
   .filter-clear:hover::before {
     color: var(--Orange);
-    background-image: url("/eCommerce-SPA/images/filter_off_orange.svg");
+    background-image: url("/ecommerce-js/images/filter_off_orange.svg");
   }
   .filter-clear:hover {
     color: var(--Orange);
@@ -1796,14 +1796,14 @@ img {
     font-size: 2rem;
     cursor: pointer;
     background-color: transparent;
-    background-image: url("/eCommerce-SPA/images/arrow_back.svg");
+    background-image: url("/ecommerce-js/images/arrow_back.svg");
     background-size: 2rem;
     background-repeat: no-repeat;
     background-position: left;
     border: none;
   }
   .filter__mobile-back:hover {
-    background-image: url("/eCommerce-SPA/images/arrow_back_orange.svg");
+    background-image: url("/ecommerce-js/images/arrow_back_orange.svg");
   }
   .filter_selection {
     grid-area: filter;
@@ -1818,7 +1818,7 @@ img {
   }
   .filter_selection::before {
     flex: 0 1 40%;
-    background-image: url("/eCommerce-SPA/images/filter.svg");
+    background-image: url("/ecommerce-js/images/filter.svg");
     background-repeat: no-repeat;
     background-size: 10%;
     display: inline-block;
@@ -1834,7 +1834,7 @@ img {
   }
   .filter_selection:hover::before {
     color: var(--Orange);
-    background-image: url("/eCommerce-SPA/images/filter_orange.svg");
+    background-image: url("/ecommerce-js/images/filter_orange.svg");
   }
   .filter_selection:hover {
     color: var(--Orange);
@@ -1851,7 +1851,7 @@ img {
   }
   .filter-clear::before {
     flex: 0 1 40%;
-    background-image: url("/eCommerce-SPA/images/filter_off.svg");
+    background-image: url("/ecommerce-js/images/filter_off.svg");
     background-repeat: no-repeat;
     background-size: 1rem;
     display: inline-block;
@@ -1867,7 +1867,7 @@ img {
   }
   .filter-clear:hover::before {
     color: var(--Orange);
-    background-image: url("/eCommerce-SPA/images/filter_off_orange.svg");
+    background-image: url("/ecommerce-js/images/filter_off_orange.svg");
   }
   .filter-clear:hover {
     color: var(--Orange);
@@ -1990,7 +1990,7 @@ img {
   transition: all 0.3s ease-out;
 }
 .scroll-top-btn::after{
-  content: url(/eCommerce-SPA/images/up.svg);
+  content: url(/ecommerce-js/images/up.svg);
 }
 .scroll-top-btn:hover {
   opacity: 0.7;

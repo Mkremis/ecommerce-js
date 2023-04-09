@@ -18,12 +18,12 @@ function ProductGallery(product) {
     $images = [
       {
         class: "gallery__previous",
-        src: "/eCommerce-SPA/images/icon-previous.svg",
+        src: "/ecommerce-js/images/icon-previous.svg",
         alt: "previous"
       },
       {
         class: "gallery__next",
-        src: "/eCommerce-SPA/images/icon-next.svg",
+        src: "/ecommerce-js/images/icon-next.svg",
         alt: "next"
       }
     ];
@@ -100,7 +100,7 @@ export function productDetails(product) {
             <button class="input__plus">+</button>
           </div>
           <button class="details__button">
-             <img src="/eCommerce-SPA/images/icon-cart-white.svg" alt="cart" />Add to cart
+             <img src="/ecommerce-js/images/icon-cart-white.svg" alt="cart" />Add to cart
           </button>
         </div>
       </section>
@@ -115,19 +115,19 @@ export function galleryModal(product) {
           <div class="modal-gallery__close-container">
             <img
               class="modal-gallery__close"
-              src="/eCommerce-SPA/images/icon-close.svg"
+              src="/ecommerce-js/images/icon-close.svg"
               alt="icon close"
             />
           </div>
           <div class="modal-gallery__image-container" style="background-image: url('https://${product.media.images[0].url}');">
             <img
               class="modal-gallery__previous"
-              src="/eCommerce-SPA/images/icon-previous.svg"
+              src="/ecommerce-js/images/icon-previous.svg"
               alt="previous"
             />
             <img
               class="modal-gallery__next"
-              src="/eCommerce-SPA/images/icon-next.svg"
+              src="/ecommerce-js/images/icon-next.svg"
               alt="next"
             />
           </div>

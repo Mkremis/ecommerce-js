@@ -142,7 +142,7 @@ display: none;
   $div.classList.add("contact-form-loader", "none");
 
   const loader = document.createElement("img");
-  loader.src = "/eCommerce-SPA/images/loader.svg";
+  loader.src = "/ecommerce-js/images/loader.svg";
   loader.alt = "cargando";
   $div.appendChild(loader);
   $form.appendChild($div);

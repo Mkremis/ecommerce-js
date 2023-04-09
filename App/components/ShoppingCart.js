@@ -50,7 +50,7 @@ export function CartManager() {
         <div class="cart-modal__delete-container">
           <img
             class="cart-modal__delete"
-            src="/eCommerce-SPA/images/icon-delete.svg"
+            src="/ecommerce-js/images/icon-delete.svg"
             alt="delete"
             data-item="${item}"/>
         </div>

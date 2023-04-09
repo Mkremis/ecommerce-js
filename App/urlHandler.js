@@ -14,8 +14,7 @@ export function urlHandler() {
   } = window;
   if (pathname.length === 0 || pathname === "/index.html" || pathname === "") {
     console.log(pathname);
-    window.location.pathname = "/";
-     //window.location.pathname = "/eCommerce-SPA/";
+    window.location.pathname = "/ecommerce-js/";
   }
   if (pathname === "/") {
     document.querySelector(".sort-filter__mobile").style.display = "none";

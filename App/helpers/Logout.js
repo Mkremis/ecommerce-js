@@ -10,7 +10,7 @@ export function Logout() {
   });
   CartManager();
   document.querySelector(".header__user").src =
-    "/eCommerce-SPA/images/not-logged.svg";
+    "/ecommerce-js/images/not-logged.svg";
   urlRoute((window.location.href = ""));
   // UserAgent();
   // window.sessionStorage.clear();

@@ -9,7 +9,7 @@ export function LoginForm() {
     <span onclick="document.getElementById('loginForm').classList.toggle('--invisible')"
 class="close" title="Close Modal">&times;</span>
     <div class="imgcontainer">
-      <img src="/eCommerce-SPA/images/not-logged.svg" alt="Avatar" class="avatar">
+      <img src="/ecommerce-js/images/not-logged.svg" alt="Avatar" class="avatar">
     </div>
     <div class="container">
       <label for="uname"><b>Username</b></label>
