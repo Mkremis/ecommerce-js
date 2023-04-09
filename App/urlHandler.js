@@ -13,9 +13,11 @@ export function urlHandler() {
     location: { pathname },
   } = window;
   if (pathname.length === 0 || pathname === "/index.html" || pathname === "") {
-    window.location.pathname = "/eCommerce-SPA/";
+    console.log(pathname);
+    window.location.pathname = "/";
+     //window.location.pathname = "/eCommerce-SPA/";
   }
-  if (pathname === "/eCommerce-SPA/") {
+  if (pathname === "/") {
     document.querySelector(".sort-filter__mobile").style.display = "none";
     document.querySelector(".filter__mobile").style.display = "none";
     Home("16661", "16691");
