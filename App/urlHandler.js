@@ -13,10 +13,9 @@ export function urlHandler() {
     location: { pathname },
   } = window;
   if (pathname.length === 0 || pathname === "/index.html" || pathname === "") {
-    console.log(pathname);
     window.location.pathname = "/ecommerce-js/";
   }
-  if (pathname === "/") {
+  if (pathname === "/ecommerce-js/") {
     document.querySelector(".sort-filter__mobile").style.display = "none";
     document.querySelector(".filter__mobile").style.display = "none";
     Home("16661", "16691");
