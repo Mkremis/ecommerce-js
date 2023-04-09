@@ -6,7 +6,7 @@ export function Home(women, men) {
   SubCat();
   const $loader = document.getElementById("loader"),
     $mobileNav = document.querySelector(".modal-navbar__background ");
-console.log(women);
+	
   let bestWM, bestM;
   const options = {
   method: 'GET',
@@ -15,7 +15,7 @@ console.log(women);
 		'X-RapidAPI-Host': 'asos2.p.rapidapi.com'
 	}
 };
-    urlWM = `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=${women}&limit=48&country=US&sort=freshness&currency=USD&sizeSchema=US&lang=en-US`,
+   const  urlWM = `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=${women}&limit=48&country=US&sort=freshness&currency=USD&sizeSchema=US&lang=en-US`,
     urlM = `https://asos2.p.rapidapi.com/products/v2/list?store=US&offset=0&categoryId=${men}&limit=48&country=US&sort=freshness&currency=USD&sizeSchema=US&lang=en-US`,
     $WMfragment = document.createDocumentFragment(),
     $Mfragment = document.createDocumentFragment(),
